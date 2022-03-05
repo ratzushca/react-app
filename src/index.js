@@ -1,4 +1,14 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import Head from "./Head"
+import '../src/styles.css'
 
-ReactDOM.render(<h1>Hello Elena</h1>, document.getElementById("root"))
+function App(){
+    return(
+        <div>
+        <Head />
+        </div>
+    )
+}
+
+ReactDOM.render(<App />, document.getElementById("root"))
