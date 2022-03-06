@@ -1,11 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body{
     background-color: rgb(163, 240, 163); 
 }
 
+nav{
+    display: flex;
+   height: 60px;
+    align-items: center;
+    background-color: darkblue;
+  
+}
+.image-icon{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+}
+.nav-motto{
+  
+    position: absolute;
+    right: 20px;
+    font-family:Snell Roundhand, cursive;
+    margin-right: auto;
+    color: #cdfb61;
+    font-weight: 700;
+    font-size: 22px;
+  
+    
+}
 h1, h3{
     text-align: center;
     margin-top: 20px;
     color: rgb(108, 108, 245);
     font-family: monospace;
-    
+    font-size: 3em;
+}
+h3{
+    font-size: 2em; 
+}
+
+
+.div1-input, .div2-input{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    font-size: 1.2em;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+/* .card-options{
+    margin-left:10px;
+    margin-right: 100px; 
+    width: 200px;   
+    display: inline-block;
+} */
+
+span{
+    font-family: monospace;
+    font-size: 1.5em;
+
+}
+.type-option, .date-option{
+    margin-left: 40px;
+}
+
+.name-option{
+    margin-left: 40px;
+}
+.amount-option{
+    margin-left: -30px;
+}
+
+.date-input, .card-input, .name-input, .amount-input, .card-options{
+    display: inline-block;
+    margin-left:10px;
+    margin-right: 100px; 
+    margin-bottom: 100px;
+    height: 40px;
+    width: 200px;
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+.name-input, .amount-input{
+    font-size: 0.8em;
+}
+
+.add-button{
+    color: whitesmoke;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    background-color: #0c4615;
+    width: 10em;
+    height: 4.5em;
+    border-radius: 5px;
+    margin-bottom: 25px;
 }
