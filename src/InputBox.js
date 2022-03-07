@@ -7,8 +7,8 @@ export default function InputBox(){
 
      <div className="form-inline">
         <div className="form-group col-md-4">
-            <label >Type:</label> 
-            <select className="form-control" >
+            <label className="type-label">Type:</label> 
+            <select className="form-control type-input" >
                 <option  >Cash</option>
                 <option >Card</option>
                 <option >Crypto</option>
@@ -26,8 +26,8 @@ export default function InputBox(){
 
     <div className="form-inline">
         <div className="form-group col-md-4">
-            <label >Name:</label> 
-            <input type="text" placeholder="What did you spend on?" className="form-control"></input>
+            <label className="name-label" >Name:</label> 
+            <input type="text" placeholder="What did you spend on?" className="form-control name-input"></input>
             </div>
             
 
@@ -37,7 +37,7 @@ export default function InputBox(){
             <input type="number"  placeholder="How much?"className="form-control amount-input"></input>
         </div>
     </div>
-    
+
         </form>
     )
 }

@@ -3,9 +3,11 @@ import React from "react"
 
 export default function Head(){
     return(
-        <div>
+        <div className="container">
+            <div className="text-md-center jumbotron">
         <h1>Simple expense manager project</h1>
-        <h3>Add a new item:</h3>
+        <a>Add a new item:</a>
+        </div>
         </div>
     )
 }
