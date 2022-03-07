@@ -4,18 +4,30 @@ import React from "react"
 export default function InputBox(){
     return(
         <form>
-        <div className="div1-input">
-        <span className="type-option">Type:</span> 
-        <select className="card-options" >
-            <option className="card-input" >Cash</option>
-            <option className="card-input">Card</option>
-            <option className="card-input">Crypto</option>
-            <option className="card-input">Other</option>
-            </select>
-        <span className="date-options">Date:</span> 
-        <input type = "date" className="date-input"/>
+
+     <div className="form-row">
+        <div className="form-group col-md-4">
+            <label >Type:</label> 
+            <select className="form-control" >
+                <option  >Cash</option>
+                <option >Card</option>
+                <option >Crypto</option>
+                <option >Other</option>
+                </select>
+            </div>
+            
+
+
+        <div className="form-group col-md-4">
+            <span className="date-options">Date:</span> 
+            <input type = "date" className="form-control"/>
         </div>
-        <div className="div2-input">
+    </div>
+
+
+
+
+        <div className="div2-input ">
         <span className="name-option">Name:</span>
         <input type="text" placeholder="What did you spend on?" className="name-input"></input>
         <span className="amount-option">Amount:</span> 
