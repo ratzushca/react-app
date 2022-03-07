@@ -5,7 +5,7 @@ export default function InputBox(){
     return(
         <form>
 
-     <div className="form-row">
+     <div className="form-inline">
         <div className="form-group col-md-4">
             <label >Type:</label> 
             <select className="form-control" >
@@ -19,20 +19,25 @@ export default function InputBox(){
 
 
         <div className="form-group col-md-4">
-            <span className="date-options">Date:</span> 
-            <input type = "date" className="form-control"/>
+            <label className="date-options date-label">Date:</label> 
+            <input type = "date" className="form-control date-input"/>
         </div>
     </div>
 
+    <div className="form-inline">
+        <div className="form-group col-md-4">
+            <label >Name:</label> 
+            <input type="text" placeholder="What did you spend on?" className="form-control"></input>
+            </div>
+            
 
 
-
-        <div className="div2-input ">
-        <span className="name-option">Name:</span>
-        <input type="text" placeholder="What did you spend on?" className="name-input"></input>
-        <span className="amount-option">Amount:</span> 
-        <input type="number"  placeholder="How much?"className="amount-input"></input>
+        <div className="form-group col-md-4">
+            <label className="date-options amount-label">Amount:</label> 
+            <input type="number"  placeholder="How much?"className="form-control amount-input"></input>
         </div>
+    </div>
+    
         </form>
     )
 }

@@ -1,6 +1,6 @@
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
 
 body{
@@ -42,6 +42,23 @@ h3{
     font-size: 2em; 
     
 }
+
+.form-inline {  
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+   
+   
+  }
+
+  
+.amount-input, .date-input,.date-label, .amount-label {
+    margin-left: 60px;
+}
+.amount-input, .date-input{
+    margin-bottom: 30px;
+}
+
 
 
 /* .div1-input, .div2-input{
