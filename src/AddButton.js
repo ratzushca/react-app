@@ -1,11 +1,11 @@
 import React from "react"
 
 
-export default function AddButton(){
+export default function AddButton({handleAddFormSubmit}){
 
     return(
         <div className ="col text-center">
-        <button  type="submit" className ="btn btn-primary" >Add a new expense</button>
+        <button  type="submit" className ="btn btn-primary" value="Submit"onClick={handleAddFormSubmit} >Add a new expense</button>
         </div>
     )
 }
