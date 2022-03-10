@@ -71,3 +71,7 @@ h1{
     margin-top: 25px;
 }
 
+.delete{
+    color:solid black;
+    background-color: crimson;
+}

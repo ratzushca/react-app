@@ -35,10 +35,18 @@ export default function App(){
         {
          const newData = (data)=>([...data, addFormData])
          setTableData(newData);
-         const emptyInput= {type:'', date:'', name:'', amount:''}
+         const emptyInput= {id: nanoid(),type:'', date:'', name:'', amount:''}
          setAddFormData(emptyInput)
         }
     } 
+
+      const hadleDeleteFunction=(rowId)=>{
+        const newRows = [...tableData];
+        const index = tableData.findIndex((row)=>row.id===rowId);
+        newRows.splice(index,1);
+        setTableData(newRows);
+      };
+
 
     return(
         <div>
@@ -52,7 +60,8 @@ export default function App(){
         <AddButton
         handleAddFormSubmit={handleAddFormSubmit}/>
         <Table
-        tableData={tableData}/>
+        tableData={tableData} 
+        hadleDeleteFunction={hadleDeleteFunction}/>
         </React.StrictMode>
         </div>
     )
