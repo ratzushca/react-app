@@ -1,4 +1,4 @@
-import React,{useState} from "react"
+import React,{useState, useEffect} from "react"
 import ReactDOM from "react-dom"
 import Head from "./Head"
 import Nav from "./Nav"
@@ -10,14 +10,24 @@ import Table from "./Table"
 
 export default function App(){
 
-    const [tableData, setTableData] = useState([])
-    const [addFormData, setAddFormData] = useState({
+
+
+    const [tableData, setTableData] = useState(localStorage.getItem('tableData')
+    ? JSON.parse(localStorage.getItem('tableData')): [])
+
+   
+    const [addFormData, setAddFormData] = useState(
+      {
+      
         type: "",
         date: "",
         name: "",
         amount: "",
     }
+    
     );
+
+  
 
       const handleAddFormChange = (event) => {
         event.preventDefault();
@@ -48,6 +58,14 @@ export default function App(){
       };
 
 
+     
+  useEffect(() => {
+    localStorage.setItem('tableData', JSON.stringify(tableData))
+  }, [tableData])
+
+ 
+
+
     return(
         <div>
         <Nav />
@@ -58,7 +76,9 @@ export default function App(){
         handleAddFormChange={handleAddFormChange} 
         addFormData={addFormData}/>
         <AddButton
-        handleAddFormSubmit={handleAddFormSubmit}/>
+        handleAddFormSubmit={handleAddFormSubmit}
+   
+        />
         <Table
         tableData={tableData} 
         hadleDeleteFunction={hadleDeleteFunction}/>
