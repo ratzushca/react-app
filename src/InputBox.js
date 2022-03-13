@@ -3,7 +3,7 @@ import React from "react"
 export default function InputBox({handleAddFormChange,handleAddFormSubmit,addFormData}){
     return(
         <div className="row inputboxes">
-        <form  className = "col-lg-6 ml-auto" onSubmit={handleAddFormSubmit}>
+        <form   onSubmit={handleAddFormSubmit}>
 
         <div className="form-inline row">
            <div className="form-group col-md-4 col-lg-4">
