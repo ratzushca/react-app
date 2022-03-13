@@ -4,9 +4,11 @@
 
 
 body{
-    background-color: rgb(163, 240, 163); 
+    background-color: rgb(163, 240, 163);
+    margin-right: 0px;
     
 }
+
 .navbar{
     position:fixed;
     top: 0;
@@ -19,38 +21,36 @@ body{
     font-weight: 700;
 }
 
-.jumbotron{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: rgb(85, 110, 118);
+
+.container {
+    font-family: arial;
+    font-size: 24px;
+    margin-top: 50px;
+    height: 170px;
+    
 }
+
+
 h1{
-    margin-top: 80px;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -o-hyphens: auto;
-    hyphens: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
 }
 
 
-
-.form-inline {  
+.form-inline{  
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
-
-  
-.amount-input, .date-input,.date-label, .amount-label {
-    margin-left: 40px;
-}
-
-.type-input, .name-input, .type-label, .name-label{
-    margin-left: -40px;
-}
 
 
 .amount-input, .date-input{
@@ -75,3 +75,39 @@ h1{
     color:solid black;
     background-color: crimson;
 }
+
+@media screen and (max-width: 425px){
+    body{
+        width: 900px;
+    }
+    .inputboxes{ 
+        width: 650px;
+        margin-left: 125px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .add-btn{
+        width: 870px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .table{
+        width: 870px;
+        margin:10px;
+    }
+    .container{
+        height: 140px;
+    
+    }
+ .date-input{
+     margin-bottom: 0px;
+ }
+  
+}
+
+
+

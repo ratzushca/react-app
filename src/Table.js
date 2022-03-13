@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Table({tableData, hadleDeleteFunction,rowId}){
     return(
-      <table className="table table-striped table-hover">
+      <table className="table table-striped table-hover col-lg-12">
       <thead key = "thead">
         <tr>
           <th scope="col" className=" bg-warning" >Type</th>
