@@ -1,5 +1,3 @@
-Add my description here on top
-
 
 # Getting Started with Create React App
 
