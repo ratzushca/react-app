@@ -1,0 +1,23 @@
+[X] Procfile & Deployment --> 'heroku local'
+    Build is run but not used due to no webserver.
+    Would need to use something like nginx to serve. 
+    Possible but challenging. Point out how this would be
+    done. 
+[X] React.strictMode correction
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+[X] hadleFormChange spelling issue
+[X] Using React.Fragment vs div 
+    https://reactjs.org/docs/fragments.html
+[X] no console logs (good thing!)
+[] setup absolute imports w/ jsconfig.json
+[X] Remove react imports where not used. 
+https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#removing-unused-react-imports    
+[X] Check for object destructuring.
+[X] App.js logic functions to tightly coupled.
+[X] Add button should be part of input form
+[X] Formatting with prettier (or something else)
+    do some research on code formatting & pick a formatter
+
+[X] RowID, how does it work?
+    Swap for data.id
+

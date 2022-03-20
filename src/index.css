@@ -1,123 +1,111 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
-body{
-    background-color: rgb(163, 240, 163);
-    margin-right: 0px;
-    
+body {
+  background-color: rgb(163, 240, 163);
+  margin-right: 0px;
 }
 
-.navbar{
-    position:fixed;
-    top: 0;
-    width: 100%;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-.align-top{
-    margin: 5px;
-    color: rgb(255, 225, 205);
-    font-family:Snell Roundhand, cursive;
-    font-weight: 700;
+.align-top {
+  margin: 5px;
+  color: rgb(255, 225, 205);
+  font-family: Snell Roundhand, cursive;
+  font-weight: 700;
 }
-
 
 .container {
-    font-family: arial;
-    font-size: 24px;
-    margin-top: 50px;
-    height: 170px;
-    
+  font-family: arial;
+  font-size: 24px;
+  margin-top: 50px;
+  height: 170px;
 }
 
+h1 {
+  margin-top: 100px;
+  color: rgb(41, 91, 86);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-h1{
-    margin-top: 100px;
-    color: rgb(41, 91, 86);
+h2 {
+  color: rgb(41, 91, 86);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.amount-input,
+.date-input {
+  margin-bottom: 30px;
+}
+
+.type-label,
+.date-label,
+.name-label,
+.amount-label {
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-family: monospace;
+}
+
+.table {
+  margin: 0 auto;
+  width: 700px;
+  margin-top: 25px;
+}
+
+.delete {
+  color: solid black;
+  background-color: crimson;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    width: 900px;
+  }
+  h1,
+  h2 {
+    font-size: 50px;
+  }
+  .inputboxes {
+    width: 650px;
+    margin-left: 125px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-h2{
-    color: rgb(41, 91, 86);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-
-}
-
-
-.form-inline{  
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  }
+  .form-control {
+    height: 70px;
   }
 
+  .add-btn {
+    width: 870px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .table {
+    width: 870px;
+    margin: 10px;
+  }
 
-.amount-input, .date-input{
-    margin-bottom: 30px;
-   
+  .container {
+    height: 140px;
+  }
+  .date-input {
+    margin-bottom: 0px;
+  }
 }
-
-.type-label, .date-label, .name-label, .amount-label{
-    margin-bottom: 10px;
-    font-weight: 900;
-    font-family: monospace;
-
-}
-
-.table{
-    margin: 0 auto;
-    width: 700px;
-    margin-top: 25px;
-}
-
-.delete{
-    color:solid black;
-    background-color: crimson;
-}
-
-@media screen and (max-width: 425px){
-    body{
-        width: 900px;
-    }
-    h1,h2{
-        font-size: 50px;
-    }
-    .inputboxes{ 
-        width: 650px;
-        margin-left: 125px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-
-    }
-    .form-control{
-        height: 70px;
-    }
-
-    .add-btn{
-        width: 870px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .table{
-        width: 870px;
-        margin:10px;
-    }
-  
- 
-    .container{
-        height: 140px;
-    
-    }
- .date-input{
-     margin-bottom: 0px;
- }
-  
-}
-
-
-
