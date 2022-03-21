@@ -1,5 +1,3 @@
-import React from "react"
-
 
 export default function Head(){
     return(
@@ -9,5 +7,5 @@ export default function Head(){
         <h2>Add a new item:</h2>
         </div>
         </div>
-    )
+    );
 }

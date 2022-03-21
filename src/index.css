@@ -6,7 +6,7 @@
 body{
     background-color: rgb(163, 240, 163);
     margin-right: 0px;
-    
+   
 }
 
 .navbar{
@@ -21,15 +21,12 @@ body{
     font-weight: 700;
 }
 
-
 .container {
     font-family: arial;
     font-size: 24px;
     margin-top: 50px;
-    height: 170px;
-    
+    height: 170px;  
 }
-
 
 h1{
     margin-top: 100px;
@@ -47,7 +44,6 @@ h2{
 
 }
 
-
 .form-inline{  
     display: flex;
     flex-flow: row wrap;
@@ -55,16 +51,18 @@ h2{
   }
 
 
-.amount-input, .date-input{
-    margin-bottom: 30px;
-   
+.amount-input,
+.date-input{
+    margin-bottom: 30px;  
 }
 
-.type-label, .date-label, .name-label, .amount-label{
+.type-label,
+.date-label,
+.name-label,
+.amount-label{
     margin-bottom: 10px;
     font-weight: 900;
     font-family: monospace;
-
 }
 
 .table{
@@ -73,17 +71,19 @@ h2{
     margin-top: 25px;
 }
 
-.delete{
+/* .delete{
     color:solid black;
     background-color: crimson;
-}
+} */
 
 @media screen and (max-width: 425px){
     body{
         width: 900px;
     }
-    h1,h2{
+    h1,
+    h2{
         font-size: 50px;
+      
     }
     .inputboxes{ 
         width: 650px;
@@ -97,18 +97,11 @@ h2{
         height: 70px;
     }
 
-    .add-btn{
-        width: 870px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
     .table{
         width: 870px;
         margin:10px;
     }
-  
- 
+
     .container{
         height: 140px;
     
