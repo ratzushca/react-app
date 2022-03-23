@@ -12,7 +12,7 @@ export default function Nav(){
         className="d-inline-block align-top" 
         alt="" 
         />
-        <p className="d-inline-block align-top mb-0 h2">Budget with a why</p>
+        <p className="d-inline-block align-top mb-0 h2">Real Estate Project</p>
         </a>
         </nav>
     );
